@@ -1,11 +1,14 @@
-let algos = require("../groupArrays.js");
+let algos = require("../feast.js");
+//FEAST OR FAMINE
+//array takes two arguments: an animal and a food, which are lowercase and have at least two letters each
+//there is a space in each string
+//if the first and last letter of the animal match the first and last letter of the food, return true, otherwise return false
 
-test("groups the arrays into an array of arrays of given length, any remainding go in last array", () => {
-    
-    expect(algos.groupArrays(["a", "b", "c", "d"], 4)).toMatchObject([ [ 'a', 'b', 'c', 'd' ] ])
-    expect(algos.groupArrays(["a", "b", "c", "d"], 3)).toMatchObject([ [ 'a', 'b', 'c' ], [ 'd' ] ])
-    expect(algos.groupArrays(["a", "b", "c", "d"], 2)).toMatchObject([ [ 'a', 'b' ], [ 'c', 'd' ] ])
-    
-  })
+// ("great blue heron", "garlic naan") return => 'gn'
+test("check if first and last letters of sting match", () => {
+  expect(algos.feast("great blue heron", "garlic naan")).toBe('gn')
+  expect(algos.feast("great blue hero", "garlic naan")).toBe('on')
+
+});
 
   
