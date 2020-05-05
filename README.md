@@ -4,13 +4,20 @@
 
 "Feast or Famine"
 
+_Language: Ruby_
+
+_Difficulty Rating: Easy_
+
 ### Objectives
-FEAST OR FAMINE
- - Write a method that takes two arguments: an animal and a food, which are lowercase and have at least two letters each
- - If the first and last letter of the animal match the first and last letter of the food, return the first and last letters
- - otherwise, if the letters do not match, return false
+
+- Create a method that takes two parameters as an input, an animal (`beast`) and a food (`dish`), and checks if the first and last letter of the _animal_ match the first and last letter of the _food_.
+- If they match, return the first and last letter as a single string.
+- If they do not match, return the boolean, `false`.
+
 > i.e.:
+>
 > input => `"great blue heron", "garlic naan"`
+>
 > output => `"gn"`
 
 ### Getting Started
@@ -19,5 +26,10 @@ FEAST OR FAMINE
 - Run `bundle` from within the repo.
 - Run `rspec` to make sure the tests work. (They should fail at first.)
 - Get hacking on the problem, test when you think you've got it, and open a PR when it's done!
+
+### Notes
+
+- All arguments are lowercase.
+- All arguments have at least two letters each.
 
 Pull requests due by 11pm. Happy hacking!
